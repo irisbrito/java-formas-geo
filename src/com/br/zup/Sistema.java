@@ -25,7 +25,11 @@ public class Sistema {
                 Retangulo retangulo = new Retangulo(IO.criarScanner().nextInt(),IO.criarScanner().nextInt());
                 IO.mostrarTexto("O total da área é: " + retangulo.calculaArea());
             } else if (resposta == 4) {
-                continuar = false;;
+                IO.mostrarTexto("Digite o valor do diametro maior e o diametro menor");
+                Losango losango = new Losango(IO.criarScanner().nextInt(),IO.criarScanner().nextInt());
+                IO.mostrarTexto("O total da área é: " + losango.calculaArea());
+            } else if (resposta == 5) {
+                continuar = false;
             }
         }
     }
