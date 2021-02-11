@@ -3,7 +3,7 @@ package com.br.zup;
 public class Sistema {
 
     public void menu(){
-        System.out.println("Digite 1 para calcular área do quadrado \n 2 para triangulo \n 3 para retangulo  \n 4 para sair");
+        System.out.println("Digite 1 para calcular área do quadrado \n 2 para triangulo \n 3 para retangulo \n 4 para losango \n 5 para sair");
     }
 
     public void executarSistema() {
