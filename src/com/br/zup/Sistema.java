@@ -18,15 +18,11 @@ public class Sistema {
                 IO.mostrarTexto("O total da área é: " + quadrado.calculaArea());
             } else if (resposta == 2) {
                 IO.mostrarTexto("Digite o valor da base e da altura");
-                int base = IO.criarScanner().nextInt();
-                int altura = IO.criarScanner().nextInt();
-                Triangulo triangulo = new Triangulo(base, altura);
+                Triangulo triangulo = new Triangulo(IO.criarScanner().nextInt(),IO.criarScanner().nextInt());
                 IO.mostrarTexto("O total da área é: " + triangulo.calculaArea());
             } else if (resposta == 3) {
                 IO.mostrarTexto("Digite o valor da base e da altura");
-                int lado1 = IO.criarScanner().nextInt();
-                int lado2 = IO.criarScanner().nextInt();
-                Retangulo retangulo = new Retangulo(lado1, lado2);
+                Retangulo retangulo = new Retangulo(IO.criarScanner().nextInt(),IO.criarScanner().nextInt());
                 IO.mostrarTexto("O total da área é: " + retangulo.calculaArea());
             } else if (resposta == 4) {
                 continuar = false;;
